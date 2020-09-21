@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "../HIMYB/node_modules/bulma/css/bulma.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -121,8 +122,13 @@
               "devServerTarget": "HIMYB:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "HIMYB"
 }
