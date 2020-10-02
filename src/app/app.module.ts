@@ -9,7 +9,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { RijutaComponent } from './rijuta/rijuta.component';
 import { MemoriesComponent } from './memories/memories.component';
 import { HaridwarComponent } from './haridwar/haridwar.component';
-
+import { NightComponent } from "./night/night.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,7 @@ import { HaridwarComponent } from './haridwar/haridwar.component';
     RijutaComponent,
     MemoriesComponent,
     HaridwarComponent,
-    NightComponent
+    NightComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { RijutaComponent } from './rijuta/rijuta.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HaridwarComponent } from './haridwar/haridwar.component';
 import { MemoriesComponent } from './memories/memories.component';
+import { NightComponent } from './night/night.component';
 
 const routes: Routes = [{
   path:'',
@@ -16,12 +17,17 @@ const routes: Routes = [{
   component : HaridwarComponent
 },
 {path:'memories',
-component: MemoriesComponent}
+component: MemoriesComponent},
+{path:'memories/night',
+component: NightComponent}
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
